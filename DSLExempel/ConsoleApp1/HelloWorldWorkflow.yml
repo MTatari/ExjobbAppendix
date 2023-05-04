@@ -1,8 +1,0 @@
-Id: DSLHelloWorld2
-Version: 1
-Steps:
-- Id: Hello
-  StepType: Program.HelloWorld, ConsoleApp1
-  NextStepId: Bye
-- Id: Bye
-  StepType: Program.GoodbyeWorld, ConsoleApp1
