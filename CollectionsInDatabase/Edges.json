@@ -1,0 +1,101 @@
+[{
+  "_id": "644d3eb38120bb831cf96342",
+  "source": "start",
+  "sourceHandle": null,
+  "target": "NumberInput",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-start-SiffrorInmatning"
+},{
+  "_id": "644d3eb38120bb831cf96346",
+  "source": "WhileSumLessThan20",
+  "sourceHandle": null,
+  "target": "IncreaseSum",
+  "targetHandle": null,
+  "id": "reactflow__edge-WhileSumLessThan20-IncreaseSum"
+},{
+  "_id": "644d3eb38120bb831cf96347",
+  "source": "WhileSumLessThan20",
+  "sourceHandle": null,
+  "target": "ScheudleAfter10Sec",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-WhileSumLessThan20-ScheudleAfter10Sec"
+},{
+  "_id": "644d3eb38120bb831cf96348",
+  "source": "ScheudleAfter10Sec",
+  "sourceHandle": null,
+  "target": "SumIs20",
+  "targetHandle": null,
+  "id": "reactflow__edge-ScheudleAfter10Sec-SumIs20"
+},{
+  "_id": "644d3eb38120bb831cf96349",
+  "source": "ResetTheNumberList",
+  "sourceHandle": null,
+  "target": "PrintResetWarning",
+  "targetHandle": null,
+  "id": "reactflow__edge-ResetTheNumberList-PrintResetWatning"
+},{
+  "_id": "644d3eb38120bb831cf9634a",
+  "source": "ResetTheNumberList",
+  "sourceHandle": null,
+  "target": "RecurDecreasingSum",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-ResetTheNumberList-RecurDecreasingSum"
+},{
+  "_id": "644d3eb38120bb831cf9634b",
+  "source": "RecurDecreasingSum",
+  "sourceHandle": null,
+  "target": "DecreaseSum",
+  "targetHandle": null,
+  "id": "reactflow__edge-RecurDecreasingSum-DecreaseSum"
+},{
+  "_id": {
+    "$oid": "644e4d768120bb831cf96483"
+  },
+  "source": "NumberInput",
+  "sourceHandle": null,
+  "target": "Decisionbranch",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-NumberInput-Decisionbranch"
+},{
+  "_id": {
+    "$oid": "644e4d768120bb831cf96484"
+  },
+  "source": "Decisionbranch",
+  "sourceHandle": null,
+  "target": "WhileSumLessThan20",
+  "targetHandle": null,
+  "type": "step",
+  "animated": true,
+  "id": "reactflow__edge-Decisionbranch-WhileSumLessThan20"
+},{
+  "_id": {
+    "$oid": "644e4d768120bb831cf96485"
+  },
+  "source": "Decisionbranch",
+  "sourceHandle": null,
+  "target": "ResetTheNumberList",
+  "targetHandle": null,
+  "type": "step",
+  "animated": true,
+  "id": "reactflow__edge-Decisionbranch-ResetTheNumberList"
+}]

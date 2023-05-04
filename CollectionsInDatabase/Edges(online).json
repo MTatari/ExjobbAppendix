@@ -1,0 +1,49 @@
+[{
+  "_id": "644658cb539188dae64f7e74",
+  "source": "start",
+  "sourceHandle": null,
+  "target": "RegisterDataFromUser",
+  "targetHandle": null,
+  "type": "step",
+  "id": "reactflow__edge-start-1",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  }
+},{
+  "_id": "64465eb3539188dae64f7e90",
+  "source": "RegisterDataFromUser",
+  "sourceHandle": null,
+  "target": "MyWaitStep",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-RegisterDataFromUser-MyWaitStep"
+},{
+  "_id": "64465eb3539188dae64f7e91",
+  "source": "MyWaitStep",
+  "sourceHandle": null,
+  "target": "RegisterMoreDetails",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-MyWaitStep-RegisterMoreDetails"
+},{
+  "_id": "64465eb3539188dae64f7e92",
+  "source": "RegisterMoreDetails",
+  "sourceHandle": null,
+  "target": "GoodbyeWorld",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-RegisterMoreDetails-GoodbyeWorld"
+}]

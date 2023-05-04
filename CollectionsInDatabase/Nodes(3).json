@@ -1,0 +1,514 @@
+[{
+  "_id": "644e53c58120bb831cf964f4",
+  "id": "start",
+  "data": {
+    "label": "start",
+    "NextStepId": "Input Node",
+    "Do": []
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 123.0196459739347,
+    "y": -199.6579661126981
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 123.0196459739347,
+    "y": -199.6579661126981
+  },
+  "dragging": false,
+  "NextStepId": "Input Node",
+  "Do": [],
+  "className": ""
+},{
+  "_id": "644e63f88120bb831cf9652d",
+  "id": "NameInput",
+  "className": "",
+  "data": {
+    "label": "NameInput",
+    "StepType": "ConsoleApp1.Steps.NameInput, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "name",
+      "vName": "step.name"
+    }
+  ],
+  "position": {
+    "x": 318.206541060078,
+    "y": 162.63129025642178
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 318.206541060078,
+    "y": 162.63129025642178
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf9652e",
+  "id": "IfDigits",
+  "className": "",
+  "data": {
+    "label": "IfDigits",
+    "StepType": "WorkflowCore.Primitives.If, WorkflowCore"
+  },
+  "inputs": [
+    {
+      "kName": "Condition",
+      "vName": "data.name != \"null\" && data.name != \"\""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 317.9292466690334,
+    "y": 308.0129886307954
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 317.9292466690334,
+    "y": 308.0129886307954
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf9652f",
+  "id": "ParallelPath",
+  "className": "",
+  "data": {
+    "label": "ParallelPath",
+    "StepType": "WorkflowCore.Primitives.Sequence, WorkflowCore"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 494.4339918798395,
+    "y": 446.9328193945788
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 494.4339918798395,
+    "y": 446.9328193945788
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf96530",
+  "id": "Delay4Sec",
+  "className": "",
+  "data": {
+    "label": "Delay4Sec",
+    "StepType": "WorkflowCore.Primitives.Delay, WorkflowCore"
+  },
+  "inputs": [
+    {
+      "kName": "Period",
+      "vName": "TimeSpan.FromSeconds(5)"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 354.71480601835054,
+    "y": 536.0454375826087
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 354.71480601835054,
+    "y": 536.0454375826087
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf96531",
+  "id": "InvalidName",
+  "className": "",
+  "data": {
+    "label": "InvalidName",
+    "StepType": "ConsoleApp1.Steps.InvalidName, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 631.0895117230646,
+    "y": 531.4992931573693
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 631.0895117230646,
+    "y": 531.4992931573693
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf96532",
+  "id": "ContactOurSupport",
+  "className": "",
+  "data": {
+    "label": "ContactOurSupport",
+    "StepType": "ConsoleApp1.Steps.ContactOurSupport, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 354.50109968274484,
+    "y": 660.7076624526867
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 354.50109968274484,
+    "y": 660.7076624526867
+  },
+  "dragging": false
+},{
+  "_id": "644658cb539188dae64f7e6e",
+  "id": "start",
+  "data": {
+    "label": "start",
+    "NextStepId": "NumberInput",
+    "Do": []
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 123.0196459739347,
+    "y": -199.6579661126981
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 123.0196459739347,
+    "y": -199.6579661126981
+  },
+  "dragging": false,
+  "NextStepId": "Input Node",
+  "Do": [],
+  "className": ""
+},{
+  "_id": "644d3eb38120bb831cf96338",
+  "id": "NumberInput",
+  "data": {
+    "label": "NumberInput",
+    "StepType": "ConsoleApp1.Steps.NumberInput, ConsoleApp1",
+    "NextStepId": "Decisionbranch",
+    "Do": []
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "firstNum",
+      "vName": "step.firstNum"
+    },
+    {
+      "kName": "secondNum",
+      "vName": "step.secondNum"
+    },
+    {
+      "kName": "sum",
+      "vName": "step.sum"
+    },
+    {
+      "kName": "numberList",
+      "vName": "step.numberList"
+    }
+  ],
+  "position": {
+    "x": 122.72007274071095,
+    "y": -71.28467075563469
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 122.72007274071095,
+    "y": -71.28467075563469
+  },
+  "dragging": false,
+  "className": ""
+},{
+  "_id": "644d3eb38120bb831cf9633a",
+  "id": "WhileSumLessThan20",
+  "data": {
+    "label": "WhileSumLessThan20",
+    "StepType": "WorkflowCore.Primitives.While, WorkflowCore",
+    "NextStepId": "ScheudleAfter10Sec",
+    "Do": [
+      [
+        {
+          "id": "IncreaseSum",
+          "StepType": "ConsoleApp1.Steps.IncreaseSum, ConsoleApp1",
+          "Do": [],
+          "inputs": {
+            "n": "data.sum"
+          },
+          "outputs": {
+            "sum": "step.n"
+          }
+        }
+      ]
+    ]
+  },
+  "inputs": [
+    {
+      "kName": "Condition",
+      "vName": "data.sum <20"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": -63.242455827552405,
+    "y": 155.35271354967387
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": -63.242455827552405,
+    "y": 155.35271354967387
+  },
+  "dragging": false,
+  "className": ""
+},{
+  "_id": "644d3eb38120bb831cf9633b",
+  "id": "IncreaseSum",
+  "data": {
+    "label": "IncreaseSum",
+    "StepType": "ConsoleApp1.Steps.IncreaseSum, ConsoleApp1",
+    "Do": []
+  },
+  "inputs": [
+    {
+      "kName": "n",
+      "vName": "data.sum"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "sum",
+      "vName": "step.n"
+    }
+  ],
+  "position": {
+    "x": -213.60216833051297,
+    "y": 244.88540398240497
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": -213.60216833051297,
+    "y": 244.88540398240497
+  },
+  "dragging": false,
+  "className": ""
+},{
+  "_id": "644d3eb38120bb831cf9633c",
+  "id": "ScheudleAfter10Sec",
+  "data": {
+    "label": "ScheudleAfter10Sec",
+    "StepType": "WorkflowCore.Primitives.Schedule, WorkflowCore",
+    "Do": [
+      [
+        {
+          "id": "SumIs20",
+          "StepType": "ConsoleApp1.Steps.SumIs20, ConsoleApp1",
+          "Do": [],
+          "inputs": {
+            "sum": "data.sum"
+          },
+          "outputs": {}
+        }
+      ]
+    ]
+  },
+  "inputs": [
+    {
+      "kName": "Interval",
+      "vName": "TimeSpan.FromSeconds(10)"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": -63.05837531095073,
+    "y": 302.08478659608994
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": -63.05837531095073,
+    "y": 302.08478659608994
+  },
+  "dragging": false,
+  "className": ""
+},{
+  "_id": "644d3eb38120bb831cf9633d",
+  "id": "SumIs20",
+  "data": {
+    "label": "SumIs20",
+    "StepType": "ConsoleApp1.Steps.SumIs20, ConsoleApp1",
+    "Do": []
+  },
+  "inputs": [
+    {
+      "kName": "sum",
+      "vName": "data.sum"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": -203.95945754302147,
+    "y": 382.6021319284862
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": -203.95945754302147,
+    "y": 382.6021319284862
+  },
+  "dragging": false,
+  "className": ""
+},{
+  "_id": "644e75078120bb831cf96583",
+  "id": "Decisionbranch",
+  "className": "",
+  "data": {
+    "StepType": "WorkflowCore.Primitives.Decide, WorkflowCore",
+    "label": "Decisionbranch",
+    "SelectNextStep": [
+      [
+        [
+          "WhileSumLessThan20"
+        ],
+        "data.sum <20"
+      ],
+      [
+        [
+          "NameInput"
+        ],
+        "data.sum>20"
+      ]
+    ]
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 116.95384068098984,
+    "y": 60.04917124367603
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 116.95384068098984,
+    "y": 60.04917124367603
+  },
+  "dragging": false
+}]

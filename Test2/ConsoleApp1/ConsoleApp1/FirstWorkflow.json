@@ -1,0 +1,134 @@
+{
+  "Id": "HelloWorld",
+  "Version": 1,
+  "DataType": "ConsoleApp1.MyData, ConsoleApp1",
+  "Steps": [
+    {
+      "id": "NumberInput",
+      "StepType": "ConsoleApp1.Steps.NumberInput, ConsoleApp1",
+      "NextStepId": "Decisionbranch",
+      "Do": [],
+      "inputs": {},
+      "outputs": {
+        "firstNum": "step.firstNum",
+        "secondNum": "step.secondNum",
+        "sum": "step.sum",
+        "numberList": "step.numberList"
+      }
+    },
+    {
+      "id": "Decisionbranch",
+      "StepType": "WorkflowCore.Primitives.Decide, WorkflowCore",
+      "SelectNextStep": {
+        "WhileSumLessThan20": "data.sum <20",
+        "NameInput": "data.sum>20"
+      },
+      "Do": [],
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "WhileSumLessThan20",
+      "StepType": "WorkflowCore.Primitives.While, WorkflowCore",
+      "NextStepId": "ScheudleAfter10Sec",
+      "Do": [
+        [
+          {
+            "id": "IncreaseSum",
+            "StepType": "ConsoleApp1.Steps.IncreaseSum, ConsoleApp1",
+            "Do": [],
+            "inputs": {
+              "n": "data.sum"
+            },
+            "outputs": {
+              "sum": "step.n"
+            }
+          }
+        ]
+      ],
+      "inputs": {
+        "Condition": "data.sum <20"
+      },
+      "outputs": {}
+    },
+    {
+      "id": "ScheudleAfter10Sec",
+      "StepType": "WorkflowCore.Primitives.Schedule, WorkflowCore",
+      "Do": [
+        [
+          {
+            "id": "SumIs20",
+            "StepType": "ConsoleApp1.Steps.SumIs20, ConsoleApp1",
+            "Do": [],
+            "inputs": {
+              "sum": "data.sum"
+            },
+            "outputs": {}
+          }
+        ]
+      ],
+      "inputs": {
+        "Interval": "TimeSpan.FromSeconds(10)"
+      },
+      "outputs": {}
+    },
+    {
+      "id": "NameInput",
+      "StepType": "ConsoleApp1.Steps.NameInput, ConsoleApp1",
+      "NextStepId": "IfDigits",
+      "Do": [],
+      "inputs": {},
+      "outputs": {
+        "name": "step.name"
+      }
+    },
+    {
+      "id": "IfDigits",
+      "StepType": "WorkflowCore.Primitives.If, WorkflowCore",
+      "Do": [
+        [
+          {
+            "id": "ParallelPath",
+            "StepType": "WorkflowCore.Primitives.Sequence, WorkflowCore",
+            "Do": [
+              [
+                {
+                  "id": "Delay4Sec",
+                  "StepType": "WorkflowCore.Primitives.Delay, WorkflowCore",
+                  "NextStepId": "ContactOurSupport",
+                  "Do": [],
+                  "inputs": {
+                    "Period": "TimeSpan.FromSeconds(5)"
+                  },
+                  "outputs": {}
+                },
+                {
+                  "id": "ContactOurSupport",
+                  "StepType": "ConsoleApp1.Steps.ContactOurSupport, ConsoleApp1",
+                  "Do": [],
+                  "inputs": {},
+                  "outputs": {}
+                }
+              ],
+              [
+                {
+                  "id": "InvalidName",
+                  "StepType": "ConsoleApp1.Steps.InvalidName, ConsoleApp1",
+                  "Do": [],
+                  "inputs": {},
+                  "outputs": {}
+                }
+              ]
+            ],
+            "inputs": {},
+            "outputs": {}
+          }
+        ]
+      ],
+      "inputs": {
+        "Condition": "data.name != \"null\" && data.name != \"\""
+      },
+      "outputs": {}
+    }
+  ]
+}

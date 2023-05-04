@@ -1,0 +1,115 @@
+[{
+  "_id": "644e63f88120bb831cf96534",
+  "source": "NameInput",
+  "sourceHandle": null,
+  "target": "IfDigits",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-NameInput-IfNoDigits"
+},{
+  "_id": "644e63f88120bb831cf96535",
+  "source": "IfDigits",
+  "sourceHandle": null,
+  "target": "ParallelPath",
+  "targetHandle": null,
+  "id": "reactflow__edge-IfNoDigits-ParallelPath"
+},{
+  "_id": "644e63f88120bb831cf96536",
+  "source": "ParallelPath",
+  "sourceHandle": null,
+  "target": "Delay4Sec",
+  "targetHandle": null,
+  "id": "reactflow__edge-ParallelPath-Delay4Sec"
+},{
+  "_id": "644e63f88120bb831cf96537",
+  "source": "ParallelPath",
+  "sourceHandle": null,
+  "target": "InvalidName",
+  "targetHandle": null,
+  "id": "reactflow__edge-ParallelPath-InvalidName"
+},{
+  "_id": "644e70b78120bb831cf96551",
+  "source": "Delay4Sec",
+  "sourceHandle": null,
+  "target": "ContactOurSupport",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-Delay4Sec-ContactOurSupport"
+},{
+  "_id": "644d3eb38120bb831cf96342",
+  "source": "start",
+  "sourceHandle": null,
+  "target": "NumberInput",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-start-SiffrorInmatning",
+  "selected": false
+},{
+  "_id": "644d3eb38120bb831cf96346",
+  "source": "WhileSumLessThan20",
+  "sourceHandle": null,
+  "target": "IncreaseSum",
+  "targetHandle": null,
+  "id": "reactflow__edge-WhileSumLessThan20-IncreaseSum"
+},{
+  "_id": "644d3eb38120bb831cf96347",
+  "source": "WhileSumLessThan20",
+  "sourceHandle": null,
+  "target": "ScheudleAfter10Sec",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-WhileSumLessThan20-ScheudleAfter10Sec"
+},{
+  "_id": "644d3eb38120bb831cf96348",
+  "source": "ScheudleAfter10Sec",
+  "sourceHandle": null,
+  "target": "SumIs20",
+  "targetHandle": null,
+  "id": "reactflow__edge-ScheudleAfter10Sec-SumIs20"
+},{
+  "_id": "644e75078120bb831cf96584",
+  "source": "NumberInput",
+  "sourceHandle": null,
+  "target": "Decisionbranch",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-NumberInput-Decisionbranch"
+},{
+  "_id": "644e75078120bb831cf96585",
+  "source": "Decisionbranch",
+  "sourceHandle": null,
+  "target": "WhileSumLessThan20",
+  "targetHandle": null,
+  "type": "step",
+  "animated": true,
+  "id": "reactflow__edge-Decisionbranch-WhileSumLessThan20"
+},{
+  "_id": "644e75078120bb831cf96586",
+  "source": "Decisionbranch",
+  "sourceHandle": null,
+  "target": "NameInput",
+  "targetHandle": null,
+  "type": "step",
+  "animated": true,
+  "id": "reactflow__edge-Decisionbranch-NameInput"
+}]

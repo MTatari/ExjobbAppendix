@@ -1,0 +1,55 @@
+{
+  "Id": "HelloWorld",
+  "Version": 1,
+  "DataType": "ConsoleApp1.MyData, ConsoleApp1",
+  "Steps": [
+    {
+      "id": "RegisterDataFromUser",
+      "StepType": "ConsoleApp1.Steps.RegisterDataFromUser, ConsoleApp1",
+      "NextStepId": "MyWaitStep",
+      "Do": [],
+      "inputs": {
+        "Id": "data.Id",
+        "Name": "data.name"
+      },
+      "outputs": {
+        "Description": "Step.Description",
+        "RejectedName": "step.Name"
+      }
+    },
+    {
+      "id": "MyWaitStep",
+      "StepType": "WorkflowCore.Primitives.WaitFor, WorkflowCore",
+      "cancelCondition": "data.RejectedName.Equals(\"Stop\")",
+      "NextStepId": "RegisterMoreDetails",
+      "Do": [],
+      "inputs": {
+        "EventName": "\"MyEvent\"",
+        "EventKey": "\"T25\"",
+        "EffectiveDate": "DateTime(2023, 4, 1)"
+      },
+      "outputs": {}
+    },
+    {
+      "id": "RegisterMoreDetails",
+      "StepType": "ConsoleApp1.Steps.RegisterMoreDetailsFromUser, ConsoleApp1",
+      "NextStepId": "GoodbyeWorld",
+      "Do": [],
+      "inputs": {
+        "DescriptionWithHobbies": "data.Description"
+      },
+      "outputs": {
+        "Description": "Step.DescriptionWithHobbies"
+      }
+    },
+    {
+      "id": "GoodbyeWorld",
+      "StepType": "ConsoleApp1.Steps.GoodbyeWorld, ConsoleApp1",
+      "Do": [],
+      "inputs": {
+        "ByeMessage": "data.Description"
+      },
+      "outputs": {}
+    }
+  ]
+}

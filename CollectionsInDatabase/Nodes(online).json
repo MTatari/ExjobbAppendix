@@ -1,0 +1,178 @@
+[{
+  "_id": "644658cb539188dae64f7e6e",
+  "id": "start",
+  "data": {
+    "label": "start",
+    "NextStepId": "Input Node",
+    "Do": []
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 273.5930767824519,
+    "y": -106.73214350376881
+  },
+  "width": 150,
+  "height": 54,
+  "selected": true,
+  "positionAbsolute": {
+    "x": 273.5930767824519,
+    "y": -106.73214350376881
+  },
+  "dragging": false,
+  "NextStepId": "Input Node",
+  "Do": [],
+  "className": ""
+},{
+  "_id": "644658cb539188dae64f7e6f",
+  "id": "RegisterDataFromUser",
+  "data": {
+    "label": "RegisterDataFromUser",
+    "StepType": "ConsoleApp1.Steps.RegisterDataFromUser, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "id",
+      "vName": "data.Id"
+    },
+    {
+      "kName": "Name",
+      "vName": "data.name"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "Description",
+      "vName": "Step.Description"
+    },
+    {
+      "kName": "RejectedName",
+      "vName": "step.Name"
+    }
+  ],
+  "position": {
+    "x": 273.1195482244493,
+    "y": 25.876894540881437
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 273.1195482244493,
+    "y": 25.876894540881437
+  },
+  "dragging": false,
+  "className": ""
+},{
+  "_id": "64465eb3539188dae64f7e8d",
+  "id": "MyWaitStep",
+  "data": {
+    "label": "MyWaitStep",
+    "StepType": "WorkflowCore.Primitives.WaitFor, WorkflowCore",
+    "cancelCondition": "data.RejectedName.Equals(\"Stop\")"
+  },
+  "inputs": [
+    {
+      "kName": "EventName",
+      "vName": "\"MyEvent\""
+    },
+    {
+      "kName": "EventKey",
+      "vName": "\"T25\""
+    },
+    {
+      "kName": "EffectiveDate",
+      "vName": "DateTime(2023, 4, 1)"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 273.1076394073616,
+    "y": 149.20638297700725
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 273.1076394073616,
+    "y": 149.20638297700725
+  },
+  "dragging": false
+},{
+  "_id": "64465eb3539188dae64f7e8e",
+  "id": "RegisterMoreDetails",
+  "data": {
+    "label": "RegisterMoreDetails",
+    "StepType": "ConsoleApp1.Steps.RegisterMoreDetailsFromUser, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "DescriptionWithHobbies",
+      "vName": "data.Description"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "Description",
+      "vName": "Step.DescriptionWithHobbies"
+    }
+  ],
+  "position": {
+    "x": 152.60962844207893,
+    "y": 278.73038350922747
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 152.60962844207893,
+    "y": 278.73038350922747
+  },
+  "dragging": false
+},{
+  "_id": "64465eb3539188dae64f7e8f",
+  "id": "GoodbyeWorld",
+  "data": {
+    "label": "GoodbyeWorld",
+    "StepType": "ConsoleApp1.Steps.GoodbyeWorld, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "ByeMessage",
+      "vName": "data.Description"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 387.9870827287671,
+    "y": 399.4740662787375
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 387.9870827287671,
+    "y": 399.4740662787375
+  },
+  "dragging": false
+}]

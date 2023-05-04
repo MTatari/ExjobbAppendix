@@ -1,0 +1,58 @@
+[{
+  "_id": "644e63f88120bb831cf96533",
+  "source": "start",
+  "sourceHandle": null,
+  "target": "NameInput",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-start-NameInput"
+},{
+  "_id": "644e63f88120bb831cf96534",
+  "source": "NameInput",
+  "sourceHandle": null,
+  "target": "IfDigits",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-NameInput-IfNoDigits"
+},{
+  "_id": "644e63f88120bb831cf96535",
+  "source": "IfDigits",
+  "sourceHandle": null,
+  "target": "ParallelPath",
+  "targetHandle": null,
+  "id": "reactflow__edge-IfNoDigits-ParallelPath"
+},{
+  "_id": "644e63f88120bb831cf96536",
+  "source": "ParallelPath",
+  "sourceHandle": null,
+  "target": "Delay4Sec",
+  "targetHandle": null,
+  "id": "reactflow__edge-ParallelPath-Delay4Sec"
+},{
+  "_id": "644e63f88120bb831cf96537",
+  "source": "ParallelPath",
+  "sourceHandle": null,
+  "target": "InvalidName",
+  "targetHandle": null,
+  "id": "reactflow__edge-ParallelPath-InvalidName"
+},{
+  "_id": "644e70b78120bb831cf96551",
+  "source": "Delay4Sec",
+  "sourceHandle": null,
+  "target": "ContactOurSupport",
+  "targetHandle": null,
+  "type": "step",
+  "style": {
+    "stroke": "#80aed1",
+    "strokeWidth": 2
+  },
+  "id": "reactflow__edge-Delay4Sec-ContactOurSupport"
+}]

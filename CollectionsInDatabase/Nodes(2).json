@@ -1,0 +1,228 @@
+[{
+  "_id": "644e53c58120bb831cf964f4",
+  "id": "start",
+  "data": {
+    "label": "start",
+    "NextStepId": "Input Node",
+    "Do": []
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 266.0438277118394,
+    "y": -221.94265690731683
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 266.0438277118394,
+    "y": -221.94265690731683
+  },
+  "dragging": false,
+  "NextStepId": "Input Node",
+  "Do": [],
+  "className": ""
+},{
+  "_id": "644e63f88120bb831cf9652d",
+  "id": "NameInput",
+  "className": "doneNode",
+  "data": {
+    "label": "NameInput",
+    "StepType": "ConsoleApp1.Steps.NameInput, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "name",
+      "vName": "step.name"
+    }
+  ],
+  "position": {
+    "x": 266.48425183498136,
+    "y": -116.5157481650186
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 266.48425183498136,
+    "y": -116.5157481650186
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf9652e",
+  "id": "IfDigits",
+  "className": "doneNode",
+  "data": {
+    "label": "IfDigits",
+    "StepType": "WorkflowCore.Primitives.If, WorkflowCore"
+  },
+  "inputs": [
+    {
+      "kName": "Condition",
+      "vName": "data.name != \"null\" && data.name != \"\""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 266.547818474099,
+    "y": 5.547818474099003
+  },
+  "width": 150,
+  "height": 54,
+  "selected": true,
+  "positionAbsolute": {
+    "x": 266.547818474099,
+    "y": 5.547818474099003
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf9652f",
+  "id": "ParallelPath",
+  "className": "",
+  "data": {
+    "label": "ParallelPath",
+    "StepType": "WorkflowCore.Primitives.Sequence, WorkflowCore"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 57.2456894668334,
+    "y": 82.68197488817526
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 57.2456894668334,
+    "y": 82.68197488817526
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf96530",
+  "id": "Delay4Sec",
+  "className": "",
+  "data": {
+    "label": "Delay4Sec",
+    "StepType": "WorkflowCore.Primitives.Delay, WorkflowCore"
+  },
+  "inputs": [
+    {
+      "kName": "Period",
+      "vName": "TimeSpan.FromSeconds(5)"
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": -123.75745338699453,
+    "y": 159.3122580739003
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": -123.75745338699453,
+    "y": 159.3122580739003
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf96531",
+  "id": "InvalidName",
+  "className": "",
+  "data": {
+    "label": "InvalidName",
+    "StepType": "ConsoleApp1.Steps.InvalidName, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": 131.91063450054244,
+    "y": 160.3245427314174
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": 131.91063450054244,
+    "y": 160.3245427314174
+  },
+  "dragging": false
+},{
+  "_id": "644e63f88120bb831cf96532",
+  "id": "ContactOurSupport",
+  "className": "",
+  "data": {
+    "label": "ContactOurSupport",
+    "StepType": "ConsoleApp1.Steps.ContactOurSupport, ConsoleApp1"
+  },
+  "inputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "outputs": [
+    {
+      "kName": "",
+      "vName": ""
+    }
+  ],
+  "position": {
+    "x": -123.94859930922294,
+    "y": 268.9586750822621
+  },
+  "width": 150,
+  "height": 54,
+  "selected": false,
+  "positionAbsolute": {
+    "x": -123.94859930922294,
+    "y": 268.9586750822621
+  },
+  "dragging": false
+}]
